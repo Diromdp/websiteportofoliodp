@@ -1,0 +1,113 @@
+/* Created by : DP */
+
+.html, body {
+    width: auto;
+    height: 184px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 9px !important;
+    font-family: Helvetica, Arial !important;
+    
+}
+/* recive */
+.rc-body {
+    width: 227px;
+}
+
+.payment-view{
+    font-size: 9px;
+    width: 227px;
+}
+.payment-view td{
+     
+    padding: 3px
+}
+.tex {
+    text-align: right !important;
+}
+
+
+.i-logo {
+    position: relative;
+    background-image: url(../img/b-logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 40;
+    height: 20px;
+    display: inline-block;
+    top: 10px;
+}
+.payment{
+    float: right;
+    margin-right: -1px;
+    font-size: 9px;
+    width: 140px;
+}
+.payment td{
+    padding: 1px;
+}
+.payment-cash{
+    font-size: 9px;
+    width: 227px;
+}
+
+.tq{
+    
+    text-align: center;
+    margin: 0 auto;
+}
+
+/*ticket*/
+.ticket {
+    width: 227px;
+    margin: 0 auto;
+    
+}
+.left{
+    float: left;
+    width: 142px;
+    height: 184px;
+    text-align: left;
+}
+.right{
+    float: left;
+    font-size: 7px;
+    width: 85px;
+    height: 184px;
+    text-align: left;
+}
+
+.detail-1{
+    margin-left: -3px;
+    font-size: 9px;
+    text-align:left !important;
+}
+.detail-1 td{
+     padding: 1px;
+    width: 142px;
+}
+.detail-1 .large {
+    font-size: 11px;
+    font-weight: 700;
+}
+.detail-1 .large-1{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.detail-2{
+    font-size: 8px;
+    width: 85px;
+    margin-left: -3px;
+}
+.detail-2 td{
+     padding: 2px;
+}
+.detail-2 .large {
+    font-size: 9px;
+    font-weight: 700;
+}
+.detail-2 .large-1{
+    font-size: 10px;
+    font-weight: 700;
+}

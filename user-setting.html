@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KOTA Cinema Mall</title>
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+<body class="bg-table">
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-kota">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--<a class="navbar-brand" href="#">Brand</a>-->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"><span class="fa fa-bar-chart"></span> Dashboard</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-gear"></span> Operasional <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Data Film</a></li>
+                                <li><a href="#">Pengaturan Show</a></li>
+                                <li><a href="#">Pengaturan User</a></li>
+                                <li><a href="#">Pengaturan Bioskop</a></li>
+								<li><a href="#">Pengaturan Studio</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-line-chart"></span> Laporan Penjualan <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Laporan Penjualan Film Harian</a></li>
+                                <li><a href="#">Penjualan Kasir Harian</a></li>
+                                <li><a href="#">Laporan Pajak Penjualan</a></li>
+                                <li><a href="#">Laporan Cetak Ulang Tiket</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span class="fa fa-th-list"></span> Data Transaksi</a></li>
+                        <li><a href="#"><span class="fa fa-times-circle-o"></span> Data Pembatalan Transaksi</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+        </nav>
+
+        <section class="container">
+            <div class="panel panel-usersetting">
+                <div class="panel-heading">
+                   <div class="title">
+                    <i class="i-setting"></i><h3 class="line-title">USER SETTING</h3> 
+					</div>
+                </div>
+                <div class="panel-body">
+                    <div class="">
+                        <button type="button" class="btn btn-success">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Tambah Data Baru
+                        </button>
+                    </div>
+
+                    <table class="table table-bordered table-curved">
+                        <tr class="table-heading">
+                            <th class="center">NAMA</th>
+                            <th class="center">USERNAME</th>
+                            <th class="center">PASSWORD</th>
+							<th class="center">LOKASI BIOSKOP</th>
+							<th class="center">JENIS</th>
+                            <th class="center"></th>
+                        </tr>
+                        <tr align="center">
+                            <td>Ujang</td>
+                            <td>TITANIC</td>
+                            <td>TITANIC</td>
+							<td><div class="dropdown drop-color">
+                                    <a href="#" class="dropdown-toggle drop-color" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jati Asih <span class="glyphicon glyphicon-triangle-bottom pull-right"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Jati Asih 1</a></li>
+                                        <li><a href="#">Jati Asih 2</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+							<td><div class="dropdown drop-color">
+                                    <a href="#" class="dropdown-toggle drop-color" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cashier <span class="glyphicon glyphicon-triangle-bottom pull-right"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Cashier 1</a></li>
+                                        <li><a href="#">Cashier 2</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="" class="drop-color"><span class="fa fa-edit"></span> Edit</a>
+                                <a href="" class="drop-color"><span class="fa fa-trash"></span> Remove</a>
+                            </td>
+                        </tr>
+                        <tr align="center">
+                            <td>Kasep</td>
+                            <td>sapa</td>
+                            <td>urang</td>
+							<td><div class="dropdown drop-color">
+                                    <a href="#" class="dropdown-toggle drop-color" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jati Asih <span class="glyphicon glyphicon-triangle-bottom pull-right"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Jati Asih 1</a></li>
+                                        <li><a href="#">Jati Asih 2</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+							<td><div class="dropdown drop-color">
+                                    <a href="#" class="dropdown-toggle drop-color" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cashier <span class="glyphicon glyphicon-triangle-bottom pull-right"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Cashier 1</a></li>
+                                        <li><a href="#">Cashier 2</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="" class="drop-color"><span class="fa fa-edit"></span> Edit</a>
+                                <a href="" class="drop-color"><span class="fa fa-trash"></span> Remove</a>
+                            </td>
+                        </tr>
+						<tr align="center">
+                            <td>Kasep</td>
+                            <td>sapa</td>
+                            <td>urang</td>
+							<td><div class="dropdown drop-color">
+                                    <a href="#" class="dropdown-toggle drop-color" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Jati Asih <span class="glyphicon glyphicon-triangle-bottom pull-right"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Jati Asih 1</a></li>
+                                        <li><a href="#">Jati Asih 2</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+							<td><div class="dropdown drop-color">
+                                    <a href="#" class="dropdown-toggle drop-color" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cashier <span class="glyphicon glyphicon-triangle-bottom pull-right"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Cashier 1</a></li>
+                                        <li><a href="#">Cashier 2</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="" class="drop-color"><span class="fa fa-edit"></span> Edit</a>
+                                <a href="" class="drop-color"><span class="fa fa-trash"></span> Remove</a>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <nav aria-label="Page navigation" class="space">
+                        <ul class="pagination pull-right">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <nav class="navbar navbar-kota navbar-kota-bottom">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1-bottom" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Logo"> Administration</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1-bottom">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="fa fa-sign-out"></span> Keluar</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</div>
+
+
+</body>
+</html>

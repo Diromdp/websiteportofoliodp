@@ -1,0 +1,906 @@
+/* option */
+
+html,body{
+font-family: Helvetica, Arial !important;    
+}
+.bg-login {
+    background-color: #1D427E;
+}
+
+.bg-table {
+    background-color: #EAEAED;
+}
+
+.bg-film  {
+    
+    background: url("../img/bg-blue.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+    background-size: 100%;
+    overflow:hidden;
+     zoom: 90%;
+}
+.bg-cetak-tiket  {
+    
+    background: url("../img/bg-blue.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+    background-size: 100%;
+     zoom: 90%;
+}
+/* icon header */
+.i-show {
+	position:relative;
+	background-image:url("../img/i-show.png");
+	background-size:100%;
+	background-repeat:no-repeat;
+	width: 20px;
+    height: 20px;
+    display: inline-block;
+    bottom: 1px;
+}
+
+
+.i-film {
+	position:relative;
+	background-image:url("../img/i-film.png");
+	background-repeat:no-repeat;
+	background-size:100%;
+	width: 20px;
+    height: 20px;
+    display: inline-block;
+    bottom: 1px;
+}
+.i-setting {
+	position:relative;
+	background-image:url("../img/i-setting.png");
+	background-repeat:no-repeat;
+	background-size:100%;
+	width: 20px;
+    height: 20px;
+    display: inline-block;
+    bottom: 1px;
+}
+.i-dewasa {
+    position: relative;
+    background-image: url(../img/i-dewasa.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+    margin-left: 160px;
+    margin-top: -40px;
+}
+.i-remaja {
+    position: relative;
+    background-image: url(../img/i-remaja.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+    margin-left: 160px;
+    margin-top: -40px;;
+}
+.i-semua-umur {
+	position: relative;
+    background-image: url(../img/i-semua-umur.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-left: 160px;
+    margin-top: -40px;;
+}
+.i-ticket{
+    position:relative;
+	background-image:url("../img/i-ticket.png");
+	background-repeat:no-repeat;
+	background-size:100%;
+	width: 20px;
+    height: 20px;
+    display: inline-block;
+    bottom: 1px;
+}
+
+.line-hight {
+	line-height:1px
+}
+.orange-color {
+	color:#f37b53
+}
+
+.drop-color {
+    
+    text-decoration: none;
+    color: #000;
+    
+}
+.drop-color:hover{
+    text-decoration: none;
+    color:#000;
+}
+
+.abuabu-color {
+	border: none;
+	color:#6d6e71;
+    background-color: #fff;
+}
+
+.padding-left-right-button{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.center {
+	text-align:center;
+    color: #fff;
+
+}
+.space{
+    padding-top: 10px;
+}
+
+
+.position-top{
+	position: relative;
+    top: 11px;
+}
+
+
+.form-login {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-login .form-control {
+    background-color: rgba(0,0,0,.2);
+    border-color: rgba(0,0,0,.25);
+    color: #ffffff;
+}
+
+.form-login a {
+    color: white;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.navbar-nav > li {
+    text-transform: uppercase;
+}
+
+.navbar-nav .dropdown-menu li {
+    text-transform: none;
+}
+
+.navbar-kota {
+    background-color: #404041;
+    border-radius: 0;
+}
+
+.navbar-kota a {
+    color: white;
+}
+
+.navbar-kota .dropdown-menu a {
+    color: #6D6E70;
+}
+
+ul.navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar-kota-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.navbar-brand img {
+    display: inline-block;
+    height: 30px;
+}
+
+.panel-heading {
+    margin: 20px 0;
+}
+.panel-body{
+clear:both;
+}
+.panel {
+    border-radius: 0;
+    margin-bottom: 70px;
+    box-shadow: 0px 0px 10px -1px #0a2b0d;
+}
+
+.panel table {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.panel .form-control {
+    background-color: #F2F2F2;
+}
+
+.panel .pagination {
+    margin: 0;
+}
+
+.panel-heading {
+    color: white;
+    text-transform: uppercase;
+}
+
+/* end option */
+
+/* film */
+
+.panel-film tr {
+    color: #000;
+    line-height: 10px;
+}
+
+.panel-film .panel-heading {
+    background-color: #9D4C9C;
+}
+
+.panel-film .table-curved > tbody > tr:nth-of-type(2n+1) {
+    background-color: rgba(157,75,155,.1);
+}
+
+.panel-film .table-curved> tbody > tr:nth-of-type(2n) {
+    background-color: rgba(157,75,155,.2);
+}
+.panel-film .table-bordered td{
+    line-height: 55px !important;
+}
+.panel-film .table-heading {
+    background-color: #9D4C9C !important;
+    color: #FFF !important;
+	text-align:center;
+}
+#fileselector {
+    margin: 10px; 
+}
+#upload-file-selector {
+    display:none;   
+}
+.margin-correction {
+    margin-right: 10px;   
+}
+@media screen and (min-width: 481px) and (max-width: 990px) {
+    /* STYLES HERE */
+.xwidth {    margin-bottom: 40px;}
+}
+
+.show-data{
+	width:100%;
+	height:80px;
+}
+.col-left{
+width:35%;
+}
+.col-right{
+width:60%;
+}
+
+/* end film */
+
+/* show */
+.panel-show .panel-body{clear:none;}
+.panel-show .form-group{
+    position: relative;
+    top: 8px;
+}
+.panel-show tr {
+    color: #000;
+}
+
+.panel-show .panel-heading {
+    background-color: #F27B52;
+}
+
+.panel-show .table-curved > tbody > tr:nth-of-type(2n+1) {
+    background-color: rgba(242,123,82,.1);
+}
+
+.panel-show .table-curved > tbody > tr:nth-of-type(2n) {
+    background-color: rgba(242,123,82,.2);
+}
+
+.panel-show .table-heading {
+   	background-color: #f37b53 !important;
+   	color: #FFF !important;
+	text-align:center;
+}
+
+.title {
+	margin-top:0;
+	margin-bottom:0;
+	height: 18px;
+}
+
+
+.line-title{
+	position:relative;
+	bottom: 50px;
+    left: 30px;
+}
+.space-right{
+	padding-right:10px;
+}
+.space-dropdown{
+	padding-right:50px;
+}
+.right {
+	float:right;
+	position: relative;
+	bottom: 90px;
+}
+.no-active {
+width:10px;
+}
+/* show */
+
+.panel-usersetting tr {
+    color: #000;
+}
+
+.panel-usersetting .panel-heading {
+    background-color: #1D427E;
+}
+
+.panel-usersetting .table-curved > tbody > tr:nth-of-type(2n+1) {
+    background-color: rgba(157,75,155,.1);
+}
+
+.panel-usersetting .table-curved > tbody > tr:nth-of-type(2n) {
+    background-color: rgba(29,66,126,.2);
+}
+
+.panel-usersetting .table-heading {
+    background-color: #1D427F !important;
+    color: white !important;
+}
+
+
+.panel-pengaturan-bioskop .panel-heading {
+    background-color: #9D4C9C;
+}
+
+.panel-pengaturan-bioskop .table-curved > tbody > tr:nth-of-type(2n+1) {
+    background-color: rgba(29,66,126,.1);
+}
+
+.panel-pengaturan-bioskop .table-curved > tbody > tr:nth-of-type(2n) {
+    background-color: rgba(157,75,155,.2);
+}
+
+.panel-pengaturan-bioskop .table-heading {
+    background-color: #9D4C9C !important;
+    color: white !important;
+}
+
+.panel-pengaturan-bioskop tr {
+    color: #000;
+}
+
+
+.panel-pengaturan-studio tr {
+    color: #000;
+}
+
+.panel-pengaturan-studio .panel-heading {
+    background-color: #DF577B;
+}
+
+.panel-pengaturan-studio .table-curved > tbody > tr:nth-of-type(2n+1) {
+    background-color: #FDEDEE;
+}
+
+.panel-pengaturan-studio .table-curved > tbody > tr:nth-of-type(2n) {
+    background-color: #F9DADE;
+}
+
+.panel-pengaturan-studio .table-heading {
+    background-color: #DF577B !important;
+    color: white !important;
+}
+
+.panel-penjualan .panel-heading {
+    background-color: #DF567B;
+}
+
+.info-graph {
+    background-color: #E5E5E5;
+    padding: 10px;
+   
+}
+
+.panel-layar .layar-header h3 {
+    background-color: red;
+    color: white;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.panel-layar .layar-footer {
+    background-color: black;
+    color: white;
+}
+
+.baris-kursi span {
+    display: inline-block;
+    width: 37px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.baris-kursi .kursi.ready {
+    background-image: url("../img/kursi-hijau.png");
+}
+
+.baris-kursi .kursi.booked {
+    background-image: url("../img/kursi-merah.png");
+}
+
+.layar-footer {
+    padding: 15px;
+}
+
+.layar-footer span {
+    display: inline-block;
+    width: 50%;
+}
+
+.rotate180 {
+    transform: rotate(180deg);
+}
+
+.banyak-kursi .kursi {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    background-image: url("../img/kursi-grey.png");
+}
+
+.banyak-kursi .kursi.selected {
+    background-image: url("../img/kursi-hitam.png");
+    color: white;
+}
+
+.pushed {
+    padding-left: 97px;
+}
+
+.panel-layar .panel-body {
+    padding: 0;
+}
+
+.layar-body {
+    padding: 50px 20px;
+}
+
+.layar-control {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.banyak-kursi {
+    margin-bottom: 20px;
+}
+
+.layar-control .info-transaksi span {
+    display: inline-block;
+    width: 50%;
+}
+
+/*table radius config*/
+.table-curved {
+    border-collapse: separate;
+}
+.table-curved {
+    border: solid #fff 1px !important;
+    border-radius: 6px;
+    border-left:0px;
+}
+.table-curved td, .table-curved th {
+    border-left: solid #fff 1px !important;
+    border-top: solid #fff 1px !important;
+}
+.table-curved th {
+    border-top: none;
+}
+.table-curved th:first-child {
+    border-radius: 6px 0 0 0;
+}
+.table-curved th:last-child {
+    border-radius: 0 6px 0 0;
+}
+.table-curved th:only-child{
+    border-radius: 6px 6px 0 0;
+}
+.table-curved tr:last-child td:first-child {
+    border-radius: 0 0 0 6px;
+}
+.table-curved tr:last-child td:last-child {
+    border-radius: 0 0 6px 0;
+}
+
+/* Daftar film */
+
+
+.panel-daftar-film {
+    border: none; 
+    color: #fff;
+    text-align: center;
+    
+}
+.panel-daftar-film .tittle-df {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    clear: right;
+    font-family: Helvetica Regular ,Helvetica !important;
+}
+
+.logo-cinema {
+    float: left;
+    width: 180PX;
+    height: 60px;
+    background-image: url("../img/lg-kota-cinema.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    clear: both;
+    margin-top: -20px;
+    
+}
+.time {
+    width: 250px;
+    float: right;
+    height: auto;
+    text-align: right;
+    margin-top: -50px;
+}
+
+.time-table {
+    list-style: none; margin-left: -40px;
+}
+.time-table li {
+    display: inline-block; padding-right: 10px;
+}
+.time-table a {
+    color: #000;
+    text-decoration: none;
+}
+.time-table a:hover {
+    color: #000;
+    text-decoration: none;
+}
+.time-table a:active {
+    color: #000;
+    text-decoration: none;
+}
+.time-table  .red {
+    color:#dd4b60 !important;
+}
+.panel-daftar-film .panel-footer{
+    background-color: transparent;
+    padding: 0px;
+    border: none;
+    height: 0;
+}
+#Marquee-news{
+    margin-top: -40px;
+}
+
+.city-info{
+    display: block;
+    width: 190px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 5px;
+    color: #73b849;
+    background-color: #132834;
+    border: 1px solid #73E073;
+    line-height: 40px;
+}
+
+/* ticket Penjualan */
+
+.panel-laporan-pajak-penjualan .panel-heading {
+    background-color: #DF577B;
+}
+.button-ticket {
+    
+    list-style: none;
+}
+.button-ticket li {
+    display: inline-block;
+    margin-right: 40px;
+    padding-top: 10px;
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.text-box {
+    
+    display: inline-block;
+    width: 140px
+    
+}
+.i-grf {
+    
+    position:relative;
+	background-image:url("../img/i-grf.png");
+	background-repeat:no-repeat;
+	background-size:100%;
+    width: 20px;
+    height: 10px;
+    top:12px;
+    display: block;
+}
+
+.i-grf-line {
+    position:relative;
+	background-image:url("../img/i-grf-line.png");
+	background-repeat:no-repeat;
+	background-size:100%;
+    width: 20px;
+    height: 10px;
+    top:12px;
+    display: block;
+}
+.xhight {
+    
+    height: 400px;
+}
+
+
+.info-grafic {
+    position: absolute;
+    padding: 10px;
+    background: #fff;
+    width: 180px;
+    font-size: 12px
+    
+}
+.info-grafic span {
+    margin-left: 25px;
+    display: block;
+}
+
+@media screen and (min-width: 570px) {
+  
+.text-box {
+    
+    display: inline-block;
+    width: 85px;
+}
+
+    
+}
+.button-ticket li {
+    margin-right: 10px;
+}
+    
+}
+
+.chart-body span {
+    text-align: center;
+    margin: 0 auto;
+}
+.chart-title {
+    text-align: center;
+}
+.chart-title a{
+    
+    top: -30px;
+    position: relative;
+}
+
+.chart-pie {
+    
+    margin: 0 auto;
+    text-align: center;
+}
+
+.info-chart {
+    margin-top: -30px;
+    padding: 10px;
+    width: 250px;
+    font-size: 18px
+    
+}
+.info-chart span {
+    margin-left: 30px;
+    display: block;
+}
+
+.i-chrt-y {
+    
+    position:relative;
+	background-image:url("../img/i-chrt-y.png");
+	background-repeat:no-repeat;
+	background-size:100%;
+    width: 20px;
+    height: 10px;
+    top:19px;
+    display: block;
+}
+
+.i-chrt-a {
+    position:relative;
+	background-image:url("../img/i-chrt-a.png");
+	background-repeat:no-repeat;
+	background-size:100%;
+    width: 20px;
+    height: 10px;
+    top:19px;
+    display: block;
+
+}
+.panel-laporan-pajak-penjualan .table-striped > tbody > tr:nth-of-type(2n+2)
+{
+    background-color: #06AED2;
+}
+
+.panel-display-setting .panel-heading {
+    background-color: #FBB317;
+}
+.panel-display-setting .pull-right {
+    margin-top: 10px;}
+.input-group .form-control {z-index: 0;}
+.input-group-btn:last-child>.btn, .input-group-btn:last-child>.btn-group {z-index: 0;}
+
+
+/* cetak tiket */
+
+.panel-cetak-tiket .tittle-df {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    clear: right;
+    font-family: Helvetica Regular ,Helvetica !important;
+}
+
+.logo-cinema {
+    float: left;
+    width: 180PX;
+    height: 60px;
+    background-image: url("../img/lg-kota-cinema.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    clear: both;
+    margin-top: -20px;
+    
+}
+.time {
+    width: 250px;
+    float: right;
+    height: auto;
+    text-align: right;
+    margin-top: -50px;
+}
+.panel-cetak-tiket .panel-body{clear:none;}
+.panel-cetak-tiket .form-group{
+    position: relative;
+    top: 8px;
+}
+.panel-cetak tr {
+    color: #000;
+}
+
+.panel-heading-content {
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #1D427F;
+}
+.panel-cetak {color: #fff;}
+.panel-cetak .table-curved td {
+    border-top: none !important;
+}
+.panel-cetak .table-curved > tbody > tr:nth-of-type(2n+1) {
+    background-color: #233750;
+    
+    color: #fff;
+}
+
+.panel-cetak .table-curved > tbody > tr:nth-of-type(2n) {
+    background-color: #1d283c;
+    color: #fff;
+}
+
+.panel-cetak .table-heading {
+   	background-color: #1D427F !important;
+   	color: #FFF !important;
+	text-align:center;
+}
+
+
+.panel-cetak .table-striped td {
+    border-top: none !important;
+    width: 180px;
+}
+.panel-cetak .table-striped > tbody > tr:nth-of-type(2n+1) {
+    background-color: #233750;
+    color: #fff;
+}
+
+.panel-cetak .table-striped > tbody > tr:nth-of-type(2n) {
+    background-color: #1d283c;
+    color: #fff;
+}
+
+.panel-cetak .table-striped {
+   	background-color: #1D427F !important;
+   	color: #FFF !important;
+	text-align:center;
+}
+.drop-color-white {
+    
+    text-decoration: none;
+    color: #fff;
+    
+}
+.drop-color-white:hover{
+    text-decoration: none;
+    color:#fff;
+}
+
+.panel-heading-content .title {
+	margin-top:0;
+	margin-bottom:0;
+	height: 30px;
+}
+
+
+.panel-heading-content .line-title{
+	position:relative;
+    bottom: 45px;
+    left: 40px;
+}
+.set-padding {
+    padding: 10px;
+}
+.set-padding-1{
+    padding-left: 10px;
+}
+.set-padding-3{
+    padding-left: 30px;
+}
+.fa-2 {
+        font-size: 2em;
+}
+.panel-cetak .b-none{
+    background: transparent !important;
+    width: 100px;
+}
+.panel-cetak .b-none td {border-top: none !important; color: #fff}
+.panel-cetak .container {
+    background-color: #1a2c38 !important;
+}
+.dropup-width{width: 280px; 
+}

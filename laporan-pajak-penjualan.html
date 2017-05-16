@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KOTA Cinema Mall</title>
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/datepicker.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/vendor/tamplate/config.css">
+    <link rel="stylesheet" href="assets/vendor/tamplate/editor.css">
+	<noscript><link rel="stylesheet" type="text/css" href="assets/vendor/tamplate/noJS.css" /></noscript>
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/vendor/jquery/editor.js"></script>
+    <script type="text/javascript">
+        
+        $(document).ready(function () {
+                
+                $('#datetimepicker1').datepicker({
+                    format: "dd/mm/yyyy"
+                }); 
+            
+                $("#clear").click(function(){
+                    $('#datetimepicker1').data('datepicker').setDate(null);
+                });
+            
+            });
+
+			function DropDown(el) {
+								this.dd = el;
+								this.initEvents();
+							}
+							DropDown.prototype = {
+								initEvents : function() {
+									var obj = this;
+
+									obj.dd.on('click', function(event){
+										$(this).toggleClass('active');
+										event.stopPropagation();
+									});	
+								}
+							}
+
+							$(function() {
+
+								var dd = new DropDown( $('#dcity') );
+
+								$(document).click(function() {
+									// all dropdowns
+									$('.wrapper-dropdown').removeClass('active');
+								});
+
+							});
+							$(function() {
+
+								var dd = new DropDown( $('#dteater') );
+
+								$(document).click(function() {
+									// all dropdowns
+									$('.wrapper-dropdown').removeClass('active');
+								});
+
+							});
+				
+
+	</script>	
+    
+</head>
+    
+<body class="bg-table">
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-kota">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--<a class="navbar-brand" href="#">Brand</a>-->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"><span class="fa fa-bar-chart"></span> Dashboard</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-gear"></span> Operasional <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Data Film</a></li>
+                                <li><a href="#">Pengaturan Show</a></li>
+                                <li><a href="#">Pengaturan User</a></li>
+                                <li><a href="#">Pengaturan Bioskop</a></li>
+								<li><a href="#">Pengaturan Studio</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-line-chart"></span> Laporan Penjualan <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Laporan Penjualan Film Harian</a></li>
+                                <li><a href="#">Penjualan Kasir Harian</a></li>
+                                <li><a href="#">Laporan Pajak Penjualan</a></li>
+                                <li><a href="#">Laporan Cetak Ulang Tiket</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span class="fa fa-th-list"></span> Data Transaksi</a></li>
+                        <li><a href="#"><span class="fa fa-times-circle-o"></span> Data Pembatalan Transaksi</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+        </nav>
+
+        <section class="container">
+            <div class="panel panel-laporan-pajak-penjualan">
+                <div class="panel-heading">
+                    <div class="title">
+                    <i class="i-ticket"></i><h3 class="line-title">Penjualan ticket</h3> 
+                        
+					</div>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <ul class="button-ticket col-sm-12 col-md-12">
+                            <li class="">
+                                <button class="btn btn-default dropdown">
+                                    <a href="#" class="dropdown-toggle drop-color" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">2016 <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">2017</a></li>
+                                        <li><a href="#">2018</a></li>
+                                    </ul>
+                                </button>
+                                <button class="btn btn-default dropdown">
+                                    <a href="#" class="dropdown-toggle drop-color" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BULAN <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">MARET</a></li>
+                                        <li><a href="#">APRIL</a></li>
+                                    </ul>
+                                </button>
+                            </li>
+                            <li>
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default">Harian</button>
+                                <button type="button" class="btn btn-default">Mingguan</button>
+                                <button type="button" class="btn btn-default">Bulanan</button>
+                                <button type="button" class="btn btn-default">Tahunan</button>
+                            </div>
+                            </li>
+                            
+                           <li>
+                                <button class="btn btn-default dropdown">
+                                    <a href="#" class="dropdown-toggle drop-color" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Kota <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Bandung</a></li>
+                                        <li><a href="#">Jakarta</a></li>
+                                    </ul>
+                                </button>
+                                
+                                <button class="btn btn-default dropdown">
+                                    <a href="#" class="dropdown-toggle drop-color" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bioskop <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Bioskop 1</a></li>
+                                        <li><a href="#">Bioskop 2</a></li>
+                                    </ul>
+                                </button>
+                                
+                                <button class="btn btn-default dropdown">
+                                    <a href="#" class="dropdown-toggle drop-color" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Studio <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Studio 1</a></li>
+                                        <li><a href="#">Studio 2</a></li>
+                                    </ul>
+                                </button>
+                                
+                            </li>
+                            <li class="pull-right">
+                            <button type="button" class="btn btn-success">
+                                <span class="fa fa-repeat" aria-hidden="true"></span> Reload Data
+                            </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="info-graph xhight">
+                        <div class="info-grafic"><i class="i-grf"></i><span>Jumlah Terjual</span><i class="i-grf-line"></i><span>Nominal Transaksi</span></div>
+                        <h3 class="text-center">Total Jumlah Pengunjung</h3>
+                        <p class="text-center">PERIODE 01/08/2016-01/09/2016</p>
+                    </div>
+                        <div class="row space">
+                            <div class="col-sm-4 col-md-4 ">
+                                <div class="info-graph" style="width:300px;">
+                                    <div class="chart-title"><h4>KAPASITAS BIOSKOP</h4><a href="#" class="fa fa-bars fa-6 drop-color pull-right" aria-hidden="true"></a></div>
+                                    <div class="chart-body">
+                                        <canvas id="countries" width="280" height="380" class="chart-pie"></canvas>
+                                      <script>
+                                      $(document).ready(function(){
+                                          var pieData = [
+                                        {
+                                            value: 20,
+                                            color:"#78818A",
+                                            labels:"Jumlah Kursi kosong"
+                                        },
+                                        {
+                                            value : 240,
+                                            color : "#FBB317",
+                                            labels: "Jumlah Kursi Penuh"
+                                        },
+                                    ];
+                                    // Get the context of the canvas element we want to select
+                                    var countries= document.getElementById("countries");
+                                    var ctx = countries.getContext('2d');
+                                    new Chart(ctx).Pie(pieData);
+                                      }); 
+                                        </script>
+                                    </div>
+                                    <div class="info-chart"><i class="i-chrt-y"></i><span>Jumlah Kursi Terjual</span><i class="i-chrt-a"></i><span>Jumlah Kursi Kosong</span></div>
+                                </div>
+                            </div>
+                            <div class="col-sm-8 col-md-8 pull-right">
+                            <div class="row position-top">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <div class='input-group date' id='datetimepicker1'>
+                                        <input type='text' class="form-control" placeholder="Date" />
+                                        <span class="input-group-addon">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                        <span class="input-group-addon" id='clear'>
+                                            <span class="fa fa-times"></span>
+                                        </span>
+                                    </div>
+                                </div>	
+                            </div>
+
+                                <div class="col-md-8">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                        <div class="input-group-btn">
+                                        <button class="btn btn-default dropdown">
+                                            <a href="#" class="dropdown-toggle drop-color" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Judul Film <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Judul 1</a></li>
+                                                <li><a href="#">Judul 1</a></li>
+                                            </ul>
+                                        </button>
+                                            <button type="button" class="btn btn-default" aria-label="Search"><span class="glyphicon glyphicon-search"></span></button>
+                                        </div><!-- /btn-group -->
+                                    </div><!-- /input-group -->
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                            <table class="table table-striped">
+                                <tr class="table-heading" >
+                                    <th class="center" style="color:#000;">KODE SHOW</th>
+                                    <th class="center" style="color:#000;"></th>
+                                    <th class="center" style="color:#000;">STUDIO</th>
+                                    <th class="center" style="color:#000;">JAM Pertunjukan</th>
+                                    <th class="center" style="color:#000;">Kapasitas</th>
+                                    <th class="center" style="color:#000;">Terjual</th>
+                                    <th class="center" style="color:#000;">Tersedia</th>
+                                    <th class="center" style="color:#000;">Kertesedian</th>
+                                </tr>
+                                <tr align="center">
+                                    <td>EXPENDABLES</td>
+                                    <td><a class="btn btn-danger" href="#" role="button">TUTUP</a></td>
+                                    <td>Studio 1</td>
+                                    <td>12:30</td>
+                                    <td>112</td>
+                                    <td>5</td>
+                                    <td>107</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr align="center">
+                                    <td>EXPENDABLES</td>
+                                    <td><a class="btn btn-danger" href="#" role="button">TUTUP</a></td>
+                                    <td>Studio 1</td>
+                                    <td>12:30</td>
+                                    <td>112</td>
+                                    <td>5</td>
+                                    <td>107</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr align="center">
+                                    <td>EXPENDABLES</td>
+                                    <td><a class="btn btn-danger" href="#" role="button">TUTUP</a></td>
+                                    <td>Studio 1</td>
+                                    <td>12:30</td>
+                                    <td>112</td>
+                                    <td>5</td>
+                                    <td>107</td>
+                                    <td>100%</td>
+                                </tr>
+                                <tr align="center">
+                                    <td>TOTAL</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>336 Kursi</td>
+                                    <td>0</td>
+                                    <td>321 Kursi</td>
+                                    <td></td>
+                                </tr>
+
+                            </table>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+             <div class="panel panel-display-setting">
+                 <div class="panel-heading">
+                    <div class="title">
+                    <i class="i-setting"></i><h3 class="line-title">DISPLAY SETTING</h3> 
+                    <div class="right">
+						<div class="wrapper-run">
+									<div id="dcity" class="wrapper-dropdown" tabindex="1">Kota
+										<ul class="dropdown">
+											<li><a href="#">Jakarta</a></li>
+											<li><a href="#">Surabaya</a></li>
+											<li><a href="#">Bandung</a></li>
+										</ul>
+									</div>
+									<div id="dteater" class="wrapper-dropdown" tabindex="1">Bioskop
+										<ul class="dropdown">
+											<li><a href="#">Bioskop 1</a></li>
+											<li><a href="#">Bioskop 3</a></li>
+											<li><a href="#">Bioskop 2</a></li>
+										</ul>
+									</div>
+						</div>
+						<div class="btn-group" role="group">
+							<button class="btn btn-success padding-left-right-button" type="button" >Ubah</button>
+						</div>
+					 </div> 
+					</div>
+                </div>
+                 <div class="panel-body">
+                     <div class="row">
+                         <div class="col-md-8">
+                            <form>
+                                <div class="form-group">
+                                  <label for="disabledTextInput">Baris film ditampilkan per halaman</label>
+                                     <div class="input-group">
+                                        <input type="text" class="form-control" >
+                                        <span class="input-group-addon">
+                                            BARIS
+                                        </span>
+                                    </div><!-- /input-group -->
+                                    <br/>
+                                    <label for="disabledTextInput">Refresh halaman</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control">
+                                        <span class="input-group-addon">
+                                            DETIK
+                                        </span><!-- /btn-group -->
+                                    </div><!-- /input-group -->
+                                    <div class="col-md-12 table-responsive">
+                                        <div class="row">
+                                            <div class="col-lg-12 nopadding">
+                                                <textarea id="txtEditor"></textarea> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <script>
+                                        $(document).ready(function() {
+                                            $("#txtEditor").Editor();
+                                        });
+                                    </script>
+                                </div>
+                                <div class="clearfix"></div>
+                                <button type="submit" class="btn btn-success pull-right">Simpan Running text</button>
+                             </form>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        </section>
+
+        <nav class="navbar navbar-kota navbar-kota-bottom">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1-bottom" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Logo"> Administration</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1-bottom">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="fa fa-sign-out"></span> Keluar</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</div>
+
+
+</body>
+</html>

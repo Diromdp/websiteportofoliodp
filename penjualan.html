@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KOTA Cinema Mall</title>
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-table">
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-kota">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--<a class="navbar-brand" href="#">Brand</a>-->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"><span class="fa fa-bar-chart"></span> Dashboard</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-gear"></span> Operasional <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Data Film</a></li>
+                                <li><a href="#">Pengaturan Show</a></li>
+                                <li><a href="#">Pengaturan Pengguna</a></li>
+                                <li><a href="#">Pengaturan Studio</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-line-chart"></span> Laporan Penjualan <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Laporan Penjualan Film Harian</a></li>
+                                <li><a href="#">Penjualan Kasir Harian</a></li>
+                                <li><a href="#">Laporan Pajak Penjualan</a></li>
+                                <li><a href="#">Laporan Cetak Ulang Tiket</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span class="fa fa-th-list"></span> Data Transaksi</a></li>
+                        <li><a href="#"><span class="fa fa-times-circle-o"></span> Data Pembatalan Transaksi</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+        </nav>
+
+        <section class="container">
+            <div class="panel panel-penjualan">
+                <div class="panel-heading">
+                    <h3 class="panel-title">PENJUALAN</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="btn-group" role="group" aria-label="...">
+                                <button type="button" class="btn btn-default">Hari</button>
+                                <button type="button" class="btn btn-default">Bulan</button>
+                                <button type="button" class="btn btn-default">Tahun</button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="col-md-6">
+                                <input type="datetime" class="form-control" placeholder="2016">
+                            </div>
+                            <div class="col-md-6">
+                                <button class="btn btn-default btn-block dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Agustus <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Terbaru</a></li>
+                                        <li><a href="#">Terpopuler</a></li>
+                                    </ul>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-default pull-right">
+                                <span class="fa fa-" aria-hidden="true"></span> Reload Data
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="info-graph">
+                        <h3 class="text-center">Total Jumlah Pengunjung</h3>
+                        <p class="text-center">PERIODE 01/08/2016-01/09/2016</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <nav class="navbar navbar-kota navbar-kota-bottom">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1-bottom" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Logo"> Administration</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1-bottom">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="fa fa-th-list"></span> Daftar Show</a></li>
+                    <li><a href="#"><span class="fa fa-image"></span> Display</a></li>
+                    <li><a href="#"><span class="fa fa-print"></span> Cetak Ulang</a></li>
+                    <li><a href="#"><span class="fa fa-sign-out"></span> Keluar</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</div>
+
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

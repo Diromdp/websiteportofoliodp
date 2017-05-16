@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KOTA Cinema Mall</title>
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-table">
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-kota">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!--<a class="navbar-brand" href="#">Brand</a>-->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#"><span class="fa fa-bar-chart"></span> Dashboard</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-gear"></span> Operasional <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Data Film</a></li>
+                                <li><a href="#">Pengaturan Show</a></li>
+                                <li><a href="#">Pengaturan Pengguna</a></li>
+                                <li><a href="#">Pengaturan Studio</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-line-chart"></span> Laporan Penjualan <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Laporan Penjualan Film Harian</a></li>
+                                <li><a href="#">Penjualan Kasir Harian</a></li>
+                                <li><a href="#">Laporan Pajak Penjualan</a></li>
+                                <li><a href="#">Laporan Cetak Ulang Tiket</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span class="fa fa-th-list"></span> Data Transaksi</a></li>
+                        <li><a href="#"><span class="fa fa-times-circle-o"></span> Data Pembatalan Transaksi</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+        </nav>
+
+        <section class="container">
+            <div class="panel panel-layar">
+                <div class="panel-body">
+                    <div class="rotate180">
+                        <div class="layar-header">
+                            <h3 class="text-center">LAYAR</h3>
+                        </div>
+
+                        <div class="layar-body">
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri col-md-6 text-center">
+                                    <span class="huruf">H</span>
+                                    <span class="kursi ready">14</span>
+                                    <span class="kursi ready">13</span>
+                                    <span class="kursi ready">12</span>
+                                    <span class="kursi ready">11</span>
+                                    <span class="kursi ready">10</span>
+                                    <span class="kursi ready">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi ready">8</span>
+                                    <span class="kursi ready">7</span>
+                                    <span class="kursi ready">6</span>
+                                    <span class="kursi ready">5</span>
+                                    <span class="kursi ready">4</span>
+                                    <span class="kursi ready">3</span>
+                                    <span class="kursi ready">2</span>
+                                    <span class="kursi ready">1</span>
+                                    <span class="huruf">H</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri col-md-6 text-center">
+                                    <span class="huruf">G</span>
+                                    <span class="kursi ready">14</span>
+                                    <span class="kursi ready">13</span>
+                                    <span class="kursi ready">12</span>
+                                    <span class="kursi ready">11</span>
+                                    <span class="kursi ready">10</span>
+                                    <span class="kursi booked">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi booked">8</span>
+                                    <span class="kursi booked">7</span>
+                                    <span class="kursi ready">6</span>
+                                    <span class="kursi ready">5</span>
+                                    <span class="kursi ready">4</span>
+                                    <span class="kursi ready">3</span>
+                                    <span class="kursi ready">2</span>
+                                    <span class="kursi ready">1</span>
+                                    <span class="huruf">G</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri col-md-6 text-center">
+                                    <span class="huruf">F</span>
+                                    <span class="kursi ready">14</span>
+                                    <span class="kursi ready">13</span>
+                                    <span class="kursi ready">12</span>
+                                    <span class="kursi ready">11</span>
+                                    <span class="kursi ready">10</span>
+                                    <span class="kursi ready">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi booked">8</span>
+                                    <span class="kursi booked">7</span>
+                                    <span class="kursi ready">6</span>
+                                    <span class="kursi ready">5</span>
+                                    <span class="kursi ready">4</span>
+                                    <span class="kursi ready">3</span>
+                                    <span class="kursi ready">2</span>
+                                    <span class="kursi ready">1</span>
+                                    <span class="huruf">F</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri col-md-6 text-center">
+                                    <span class="huruf">E</span>
+                                    <span class="kursi ready">14</span>
+                                    <span class="kursi ready">13</span>
+                                    <span class="kursi ready">12</span>
+                                    <span class="kursi ready">11</span>
+                                    <span class="kursi ready">10</span>
+                                    <span class="kursi ready">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi ready">8</span>
+                                    <span class="kursi ready">7</span>
+                                    <span class="kursi ready">6</span>
+                                    <span class="kursi ready">5</span>
+                                    <span class="kursi ready">4</span>
+                                    <span class="kursi ready">3</span>
+                                    <span class="kursi ready">2</span>
+                                    <span class="kursi ready">1</span>
+                                    <span class="huruf">E</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri col-md-6 text-center">
+                                    <span class="huruf">D</span>
+                                    <span class="kursi ready">14</span>
+                                    <span class="kursi ready">13</span>
+                                    <span class="kursi ready">12</span>
+                                    <span class="kursi ready">11</span>
+                                    <span class="kursi booked">10</span>
+                                    <span class="kursi booked">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi booked">8</span>
+                                    <span class="kursi booked">7</span>
+                                    <span class="kursi booked">6</span>
+                                    <span class="kursi booked">5</span>
+                                    <span class="kursi booked">4</span>
+                                    <span class="kursi booked">3</span>
+                                    <span class="kursi ready">2</span>
+                                    <span class="kursi ready">1</span>
+                                    <span class="huruf">D</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri col-md-6 text-center">
+                                    <span class="huruf">C</span>
+                                    <span class="kursi booked">14</span>
+                                    <span class="kursi booked">13</span>
+                                    <span class="kursi booked">12</span>
+                                    <span class="kursi booked">11</span>
+                                    <span class="kursi booked">10</span>
+                                    <span class="kursi booked">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi booked">8</span>
+                                    <span class="kursi booked">7</span>
+                                    <span class="kursi booked">6</span>
+                                    <span class="kursi booked">5</span>
+                                    <span class="kursi booked">4</span>
+                                    <span class="kursi booked">3</span>
+                                    <span class="kursi booked">2</span>
+                                    <span class="kursi booked">1</span>
+                                    <span class="huruf">C</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri col-md-6 text-center">
+                                    <span class="huruf">B</span>
+                                    <span class="kursi ready">14</span>
+                                    <span class="kursi ready">13</span>
+                                    <span class="kursi booked">12</span>
+                                    <span class="kursi booked">11</span>
+                                    <span class="kursi booked">10</span>
+                                    <span class="kursi booked">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi booked">8</span>
+                                    <span class="kursi booked">7</span>
+                                    <span class="kursi booked">6</span>
+                                    <span class="kursi booked">5</span>
+                                    <span class="kursi booked">4</span>
+                                    <span class="kursi booked">3</span>
+                                    <span class="kursi ready">2</span>
+                                    <span class="kursi ready">1</span>
+                                    <span class="huruf">B</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri col-md-6 text-center">
+                                    <span class="huruf">A</span>
+                                    <span class="kursi ready">14</span>
+                                    <span class="kursi ready">13</span>
+                                    <span class="kursi ready">12</span>
+                                    <span class="kursi ready">11</span>
+                                    <span class="kursi booked">10</span>
+                                    <span class="kursi booked">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi booked">8</span>
+                                    <span class="kursi booked">7</span>
+                                    <span class="kursi booked">6</span>
+                                    <span class="kursi booked">5</span>
+                                    <span class="kursi ready">4</span>
+                                    <span class="kursi ready">3</span>
+                                    <span class="kursi ready">2</span>
+                                    <span class="kursi ready">1</span>
+                                    <span class="huruf">A</span>
+                                </div>
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="layar-footer">
+                            <div class="col-md-12">
+                                <h4 class="text-center">TIGA DARA</h4>
+                            </div>
+                            <div class="col-md-4">
+                                <div><span>Teater</span><span>1</span></div>
+                                <div><span>Show</span><span>TIGADARA</span></div>
+                                <div><span>Hari</span><span>Sabtu</span></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div><span>Kode Film</span><span>TIGADARA</span></div>
+                                <div><span>Jam</span><span>23.00</span></div>
+                                <div><span>Tanggal</span><span>25/07/2016</span></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div><span>Jumlah Kursi</span><span>2</span></div>
+                                <div><span>HTM</span><span>Rp 35.000</span></div>
+                                <div><span>Total Bayar</span><span>Rp 70.000</span></div>
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="layar-control">
+                        <div class="col-md-3">
+                            <p>Silahkan memilih banyak kursi</p>
+                            <div class="banyak-kursi">
+                                <span class="kursi">1</span>
+                                <span class="kursi selected">2</span>
+                                <span class="kursi">3</span>
+                                <span class="kursi">4</span>
+                                <span class="kursi">5</span>
+                                <span class="kursi">6</span>
+                                <span class="kursi">7</span>
+                                <span class="kursi">8</span>
+                                <span class="kursi">9</span>
+                            </div>
+                            <div class="button-action">
+                                <a href="" class="btn btn-info pull-left"><span class="fa fa-arrow-left"></span> Kembali</a>
+                                <button class="btn btn-info pull-right"><span class="fa fa-refresh"></span> Bersihkan</button>
+
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9 info-transaksi">
+                        <div class="col-md-12">
+                            <h4>TIGA DARA</h4>
+                        </div>
+                        <div class="col-md-3">
+                            <div><span>Teater</span><span>1</span></div>
+                            <div><span>Show</span><span>TIGADARA</span></div>
+                            <div><span>Hari</span><span>Sabtu</span></div>
+                        </div>
+                        <div class="col-md-3">
+                            <div><span>Kode Film</span><span>TIGADARA</span></div>
+                            <div><span>Jam</span><span>23.00</span></div>
+                            <div><span>Tanggal</span><span>25/07/2016</span></div>
+                        </div>
+                        <div class="col-md-3">
+                            <div><span>Jumlah Kursi</span><span>2</span></div>
+                            <div><span>HTM</span><span>Rp 35.000</span></div>
+                            <div><span>Total Bayar</span><span>Rp 70.000</span></div>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-info btn-block">Bayar Tunai</button>
+                            <button class="btn btn-danger btn-block">Freepass</button>
+                            <button class="btn btn-primary btn-block">Bayar Debit</button>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-layar">
+                <div class="panel-body">
+                    <div class="rotate180">
+                        <div class="layar-header">
+                            <h3 class="text-center">LAYAR</h3>
+                        </div>
+
+                        <div class="layar-body">
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri col-md-6 pushed text-center">
+                                    <span class="huruf">N</span>
+                                    <span class="kursi ready">14</span>
+                                    <span class="kursi ready">13</span>
+                                    <span class="kursi ready">12</span>
+                                    <span class="kursi ready">11</span>
+                                    <span class="kursi ready">10</span>
+                                    <span class="kursi ready">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi ready">8</span>
+                                    <span class="kursi ready">7</span>
+                                    <span class="kursi ready">6</span>
+                                    <span class="kursi ready">5</span>
+                                    <span class="kursi ready">4</span>
+                                    <span class="kursi ready">3</span>
+                                    <span class="kursi ready">2</span>
+                                    <span class="kursi ready">1</span>
+                                    <span class="huruf">N</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri col-md-6 pushed text-center">
+                                    <span class="huruf">M</span>
+                                    <span class="kursi ready">14</span>
+                                    <span class="kursi ready">13</span>
+                                    <span class="kursi ready">12</span>
+                                    <span class="kursi ready">11</span>
+                                    <span class="kursi ready">10</span>
+                                    <span class="kursi ready">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi ready">8</span>
+                                    <span class="kursi ready">7</span>
+                                    <span class="kursi ready">6</span>
+                                    <span class="kursi ready">5</span>
+                                    <span class="kursi ready">4</span>
+                                    <span class="kursi ready">3</span>
+                                    <span class="kursi ready">2</span>
+                                    <span class="kursi ready">1</span>
+                                    <span class="huruf">M</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri col-md-6 pushed text-center">
+                                    <span class="huruf">L</span>
+                                    <span class="kursi ready">14</span>
+                                    <span class="kursi ready">13</span>
+                                    <span class="kursi ready">12</span>
+                                    <span class="kursi ready">11</span>
+                                    <span class="kursi ready">10</span>
+                                    <span class="kursi ready">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi ready">8</span>
+                                    <span class="kursi ready">7</span>
+                                    <span class="kursi ready">6</span>
+                                    <span class="kursi ready">5</span>
+                                    <span class="kursi ready">4</span>
+                                    <span class="kursi ready">3</span>
+                                    <span class="kursi ready">2</span>
+                                    <span class="kursi ready">1</span>
+                                    <span class="huruf">L</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri col-md-6 pushed text-center">
+                                    <span class="huruf">K</span>
+                                    <span class="kursi ready">14</span>
+                                    <span class="kursi ready">13</span>
+                                    <span class="kursi ready">12</span>
+                                    <span class="kursi ready">11</span>
+                                    <span class="kursi ready">10</span>
+                                    <span class="kursi ready">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi ready">8</span>
+                                    <span class="kursi ready">7</span>
+                                    <span class="kursi ready">6</span>
+                                    <span class="kursi ready">5</span>
+                                    <span class="kursi ready">4</span>
+                                    <span class="kursi ready">3</span>
+                                    <span class="kursi ready">2</span>
+                                    <span class="kursi ready">1</span>
+                                    <span class="huruf">K</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri col-md-6 pushed text-center">
+                                    <span class="huruf">J</span>
+                                    <span class="kursi ready">14</span>
+                                    <span class="kursi ready">13</span>
+                                    <span class="kursi ready">12</span>
+                                    <span class="kursi ready">11</span>
+                                    <span class="kursi ready">10</span>
+                                    <span class="kursi ready">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi ready">8</span>
+                                    <span class="kursi ready">7</span>
+                                    <span class="kursi ready">6</span>
+                                    <span class="kursi ready">5</span>
+                                    <span class="kursi ready">4</span>
+                                    <span class="kursi ready">3</span>
+                                    <span class="kursi ready">2</span>
+                                    <span class="kursi ready">1</span>
+                                    <span class="huruf">J</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri col-md-6 pushed text-center">
+                                    <span class="huruf">I</span>
+                                    <span class="kursi ready">14</span>
+                                    <span class="kursi ready">13</span>
+                                    <span class="kursi ready">12</span>
+                                    <span class="kursi ready">11</span>
+                                    <span class="kursi ready">10</span>
+                                    <span class="kursi ready">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi ready">8</span>
+                                    <span class="kursi ready">7</span>
+                                    <span class="kursi ready">6</span>
+                                    <span class="kursi ready">5</span>
+                                    <span class="kursi ready">4</span>
+                                    <span class="kursi ready">3</span>
+                                    <span class="kursi ready">2</span>
+                                    <span class="kursi ready">1</span>
+                                    <span class="huruf">I</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri col-md-6 pushed text-center">
+                                    <span class="huruf">H</span>
+                                    <span class="kursi ready">14</span>
+                                    <span class="kursi ready">13</span>
+                                    <span class="kursi ready">12</span>
+                                    <span class="kursi ready">11</span>
+                                    <span class="kursi ready">10</span>
+                                    <span class="kursi ready">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi ready">8</span>
+                                    <span class="kursi ready">7</span>
+                                    <span class="kursi ready">6</span>
+                                    <span class="kursi ready">5</span>
+                                    <span class="kursi ready">4</span>
+                                    <span class="kursi ready">3</span>
+                                    <span class="kursi ready">2</span>
+                                    <span class="kursi ready">1</span>
+                                    <span class="huruf">H</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri col-md-6 pushed text-center">
+                                    <span class="huruf">G</span>
+                                    <span class="kursi ready">14</span>
+                                    <span class="kursi ready">13</span>
+                                    <span class="kursi ready">12</span>
+                                    <span class="kursi ready">11</span>
+                                    <span class="kursi ready">10</span>
+                                    <span class="kursi booked">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi booked">8</span>
+                                    <span class="kursi booked">7</span>
+                                    <span class="kursi ready">6</span>
+                                    <span class="kursi ready">5</span>
+                                    <span class="kursi ready">4</span>
+                                    <span class="kursi ready">3</span>
+                                    <span class="kursi ready">2</span>
+                                    <span class="kursi ready">1</span>
+                                    <span class="huruf">G</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri col-md-6 pushed text-center">
+                                    <span class="huruf">F</span>
+                                    <span class="kursi ready">14</span>
+                                    <span class="kursi ready">13</span>
+                                    <span class="kursi ready">12</span>
+                                    <span class="kursi ready">11</span>
+                                    <span class="kursi ready">10</span>
+                                    <span class="kursi ready">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi booked">8</span>
+                                    <span class="kursi booked">7</span>
+                                    <span class="kursi ready">6</span>
+                                    <span class="kursi ready">5</span>
+                                    <span class="kursi ready">4</span>
+                                    <span class="kursi ready">3</span>
+                                    <span class="kursi ready">2</span>
+                                    <span class="kursi ready">1</span>
+                                    <span class="huruf">F</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri col-md-6 pushed text-center">
+                                    <span class="huruf">E</span>
+                                    <span class="kursi ready">14</span>
+                                    <span class="kursi ready">13</span>
+                                    <span class="kursi ready">12</span>
+                                    <span class="kursi ready">11</span>
+                                    <span class="kursi ready">10</span>
+                                    <span class="kursi ready">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi ready">8</span>
+                                    <span class="kursi ready">7</span>
+                                    <span class="kursi ready">6</span>
+                                    <span class="kursi ready">5</span>
+                                    <span class="kursi ready">4</span>
+                                    <span class="kursi ready">3</span>
+                                    <span class="kursi ready">2</span>
+                                    <span class="kursi ready">1</span>
+                                    <span class="huruf">E</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri col-md-6 pushed text-center">
+                                    <span class="huruf">D</span>
+                                    <span class="kursi ready">14</span>
+                                    <span class="kursi ready">13</span>
+                                    <span class="kursi ready">12</span>
+                                    <span class="kursi ready">11</span>
+                                    <span class="kursi booked">10</span>
+                                    <span class="kursi booked">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi booked">8</span>
+                                    <span class="kursi booked">7</span>
+                                    <span class="kursi booked">6</span>
+                                    <span class="kursi booked">5</span>
+                                    <span class="kursi booked">4</span>
+                                    <span class="kursi booked">3</span>
+                                    <span class="kursi ready">2</span>
+                                    <span class="kursi ready">1</span>
+                                    <span class="huruf">D</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri col-md-6 pushed text-center">
+                                    <span class="huruf">C</span>
+                                    <span class="kursi booked">14</span>
+                                    <span class="kursi booked">13</span>
+                                    <span class="kursi booked">12</span>
+                                    <span class="kursi booked">11</span>
+                                    <span class="kursi booked">10</span>
+                                    <span class="kursi booked">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi booked">8</span>
+                                    <span class="kursi booked">7</span>
+                                    <span class="kursi booked">6</span>
+                                    <span class="kursi booked">5</span>
+                                    <span class="kursi booked">4</span>
+                                    <span class="kursi booked">3</span>
+                                    <span class="kursi booked">2</span>
+                                    <span class="kursi booked">1</span>
+                                    <span class="huruf">C</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri  col-md-6 text-center">
+                                    <span class="huruf">B</span>
+                                    <span class="kursi booked">16</span>
+                                    <span class="kursi booked">15</span>
+                                    <span class="kursi booked">14</span>
+                                    <span class="kursi booked">13</span>
+                                    <span class="kursi booked">12</span>
+                                    <span class="kursi booked">11</span>
+                                    <span class="kursi booked">10</span>
+                                    <span class="kursi booked">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi booked">8</span>
+                                    <span class="kursi booked">7</span>
+                                    <span class="kursi booked">6</span>
+                                    <span class="kursi booked">5</span>
+                                    <span class="kursi booked">4</span>
+                                    <span class="kursi booked">3</span>
+                                    <span class="kursi ready">2</span>
+                                    <span class="kursi ready">1</span>
+                                    <span class="huruf">B</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 baris-kursi">
+                                <div class="kursi-kiri  col-md-6 text-center">
+                                    <span class="huruf">A</span>
+                                    <span class="kursi ready">16</span>
+                                    <span class="kursi ready">15</span>
+                                    <span class="kursi ready">14</span>
+                                    <span class="kursi ready">13</span>
+                                    <span class="kursi ready">12</span>
+                                    <span class="kursi ready">11</span>
+                                    <span class="kursi booked">10</span>
+                                    <span class="kursi booked">9</span>
+                                </div>
+
+                                <div class="kursi-kanan col-md-6 text-center">
+                                    <span class="kursi booked">8</span>
+                                    <span class="kursi booked">7</span>
+                                    <span class="kursi booked">6</span>
+                                    <span class="kursi booked">5</span>
+                                    <span class="kursi ready">4</span>
+                                    <span class="kursi ready">3</span>
+                                    <span class="kursi ready">2</span>
+                                    <span class="kursi ready">1</span>
+                                    <span class="huruf">A</span>
+                                </div>
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="layar-footer">
+                            <div class="col-md-12">
+                                <h4 class="text-center">TIGA DARA</h4>
+                            </div>
+                            <div class="col-md-4">
+                                <div><span>Teater</span><span>1</span></div>
+                                <div><span>Show</span><span>TIGADARA</span></div>
+                                <div><span>Hari</span><span>Sabtu</span></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div><span>Kode Film</span><span>TIGADARA</span></div>
+                                <div><span>Jam</span><span>23.00</span></div>
+                                <div><span>Tanggal</span><span>25/07/2016</span></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div><span>Jumlah Kursi</span><span>2</span></div>
+                                <div><span>HTM</span><span>Rp 35.000</span></div>
+                                <div><span>Total Bayar</span><span>Rp 70.000</span></div>
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <div class="layar-control">
+                        <div class="col-md-3">
+                            <p>Silahkan memilih banyak kursi</p>
+                            <div class="banyak-kursi">
+                                <span class="kursi">1</span>
+                                <span class="kursi selected">2</span>
+                                <span class="kursi">3</span>
+                                <span class="kursi">4</span>
+                                <span class="kursi">5</span>
+                                <span class="kursi">6</span>
+                                <span class="kursi">7</span>
+                                <span class="kursi">8</span>
+                                <span class="kursi">9</span>
+                            </div>
+                            <div class="button-action">
+                                <a href="" class="btn btn-info pull-left"><span class="fa fa-arrow-left"></span> Kembali</a>
+                                <button class="btn btn-info pull-right"><span class="fa fa-refresh"></span> Bersihkan</button>
+
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-9 info-transaksi">
+                            <div class="col-md-12">
+                                <h4>TIGA DARA</h4>
+                            </div>
+                            <div class="col-md-3">
+                                <div><span>Teater</span><span>1</span></div>
+                                <div><span>Show</span><span>TIGADARA</span></div>
+                                <div><span>Hari</span><span>Sabtu</span></div>
+                            </div>
+                            <div class="col-md-3">
+                                <div><span>Kode Film</span><span>TIGADARA</span></div>
+                                <div><span>Jam</span><span>23.00</span></div>
+                                <div><span>Tanggal</span><span>25/07/2016</span></div>
+                            </div>
+                            <div class="col-md-3">
+                                <div><span>Jumlah Kursi</span><span>2</span></div>
+                                <div><span>HTM</span><span>Rp 35.000</span></div>
+                                <div><span>Total Bayar</span><span>Rp 70.000</span></div>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-info btn-block">Bayar Tunai</button>
+                                <button class="btn btn-danger btn-block">Freepass</button>
+                                <button class="btn btn-primary btn-block">Bayar Debit</button>
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <nav class="navbar navbar-kota navbar-kota-bottom">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1-bottom" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Logo"> Administration</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1-bottom">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="fa fa-th-list"></span> Daftar Show</a></li>
+                    <li><a href="#"><span class="fa fa-image"></span> Display</a></li>
+                    <li><a href="#"><span class="fa fa-print"></span> Cetak Ulang</a></li>
+                    <li><a href="#"><span class="fa fa-sign-out"></span> Keluar</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</div>
+
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
